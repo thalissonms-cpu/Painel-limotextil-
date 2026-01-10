@@ -3,86 +3,192 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Painel de Planilhas</title>
-
-<!-- Favicon com emoji 📊 -->
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="apple-touch-icon" href="favicon.svg">
+<title>Painel de Planilhas - Limotextil</title>
 
 <style>
   body {
     font-family: "Segoe UI", sans-serif;
-    background: #f4f4f4;
+    background: #f0f2f5;
     padding: 20px;
     text-align: center;
     margin: 0;
   }
 
   h1 {
-    color: #2b579a;
+    color: #1a3e72;
     margin: 20px 0 30px;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 12px;
+    gap: 16px;
   }
 
   .card {
     background: #fff;
-    border-radius: 10px;
-    padding: 16px 10px;
-    width: 45%;
-    max-width: 180px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    transition: transform 0.2s;
+    border-radius: 12px;
+    padding: 20px 15px;
+    width: 220px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    cursor: pointer;
   }
 
   .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
   }
 
-  a {
+  .card a {
     text-decoration: none;
-    color: #2b579a;
+    color: inherit;
     display: block;
   }
 
+  .section {
+    width: 100%;
+    margin: 40px 0 20px;
+    text-align: center;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+
+  .section hr {
+    border: none;
+    height: 3px;
+    width: 90px;
+    margin: 0 auto;
+    border-radius: 2px;
+  }
+
+  /* Setores com cores diferentes */
+  .openend .card {
+    background: #cce5ff;
+    color: #1a3e72;
+  }
+
+  .preparacao .card {
+    background: #d4edda;
+    color: #155724;
+  }
+
   @media (max-width: 600px) {
-    body {
-      padding: 10px;
+    .card {
+      width: 90%;
+      font-size: 1.1rem;
+      padding: 18px;
     }
     h1 {
-      font-size: 1.3rem;
+      font-size: 1.6rem;
     }
-    .card {
-      width: 100%;
-      max-width: none;
-      font-size: 1rem;
-      padding: 14px;
+    .section h2 {
+      font-size: 1.3rem;
     }
   }
 </style>
 </head>
+
 <body>
-  <h1>📊 Painel Interativo Limotextil</h1>
+
+<h1>📊 Painel Interativo Limotextil</h1>
+
+<!-- SEÇÃO GERAL -->
+<div class="container">
+  <div class="card"><a href="https://docs.google.com/spreadsheets/d/1CdnrRokJtBCHZwPVo4CAqBlI0wzNtmsydimmbAvpeBM/edit?gid=413330425#gid=413330425" target="_blank">📝 Planilha de Pedidos</a></div>
+  <div class="card"><a href="https://docs.google.com/spreadsheets/d/1E4gJGXu4O6RDsx2m_Q-tN54FYPuX06p7DuzpclyEQPY/edit?gid=2071138657" target="_blank">🏭 Controle de Produção Mensal</a></div>
+  <div class="card"><a href="https://docs.google.com/spreadsheets/d/1-JxQ7ptmwK49dcit_zLymXNui4eQUA-VEiI0mGDfI1c/edit?gid=705552691" target="_blank">📋 Relatório de Carda</a></div>
+  <div class="card"><a href="https://docs.google.com/spreadsheets/d/1ydbOMk3us5eN3DfM_woTnN9XLCTnoaSI-DgdCi_fHP8/edit?gid=1999180234" target="_blank">🧵 Relatório de Passador</a></div>
+  <div class="card"><a href="https://docs.google.com/spreadsheets/d/1CdnrRokJtBCHZwPVo4CAqBlI0wzNtmsydimmbAvpeBM/edit?gid=1823508794" target="_blank">💰 Balanço de Vendas 2025</a></div>
+</div>
+
+<!-- SEÇÃO OPEN END -->
+<div class="section openend">
+  <h2>🧵 Open End</h2>
+  <hr style="background-color:#1a3e72;">
   <div class="container">
-    <div class="card"><a href="https://docs.google.com/spreadsheets/d/1CdnrRokJtBCHZwPVo4CAqBlI0wzNtmsydimmbAvpeBM/htmlview#gid=1823508794" target="_blank">📝 Planilha de Pedidos</a></div>
-    <div class="card"><a href="https://docs.google.com/spreadsheets/d/1E4gJGXu4O6RDsx2m_Q-tN54FYPuX06p7DuzpclyEQPY/edit#gid=2071138657" target="_blank">🏭 Controle de Produção Mensal</a></div>
-    <div class="card"><a href="https://docs.google.com/spreadsheets/d/1-JxQ7ptmwK49dcit_zLymXNui4eQUA-VEiI0mGDfI1c/edit#gid=705552691" target="_blank">📋 Relatório de Carda</a></div>
-    <div class="card"><a href="https://docs.google.com/spreadsheets/d/1ydbOMk3us5eN3DfM_woTnN9XLCTnoaSI-DgdCi_fHP8/edit#gid=1999180234" target="_blank">🧵 Relatório de Passador</a></div>
-    <div class="card"><a href="https://docs.google.com/spreadsheets/d/1WSk12p87XlDCORdp4iZieE2-dTs3G1JpngsSAbCTb98/edit#gid=1896706324" target="_blank">⚠️ Ocorrências da Preparação</a></div>
-    <div class="card"><a href="https://docs.google.com/spreadsheets/d/1E4gJGXu4O6RDsx2m_Q-tN54FYPuX06p7DuzpclyEQPY/edit#gid=1186186860" target="_blank">📊 Balanço Anual 2025</a></div>
-    <div class="card"><a href="https://docs.google.com/spreadsheets/d/1E4gJGXu4O6RDsx2m_Q-tN54FYPuX06p7DuzpclyEQPY/edit#gid=1492182534" target="_blank">📊 Balanço Anual 2024</a></div>
-    <div class="card"><a href="https://docs.google.com/spreadsheets/d/1E4gJGXu4O6RDsx2m_Q-tN54FYPuX06p7DuzpclyEQPY/edit#gid=1826557484" target="_blank">📊 Balanço Anual 2023</a></div>
-    <div class="card"><a href="https://docs.google.com/spreadsheets/d/1E4gJGXu4O6RDsx2m_Q-tN54FYPuX06p7DuzpclyEQPY/edit#gid=1370985840" target="_blank">📈 Porcentagem por Título 2025</a></div>
-    <div class="card"><a href="https://docs.google.com/spreadsheets/d/1E4gJGXu4O6RDsx2m_Q-tN54FYPuX06p7DuzpclyEQPY/edit#gid=540332591" target="_blank">📈 Porcentagem por Título 2024</a></div>
+    <div class="card"><a href="https://docs.google.com/spreadsheets/d/1E4gJGXu4O6RDsx2m_Q-tN54FYPuX06p7DuzpclyEQPY/edit?gid=1826557484" target="_blank">📊 Balanço Open End 2023</a></div>
+    <div class="card"><a href="https://docs.google.com/spreadsheets/d/1E4gJGXu4O6RDsx2m_Q-tN54FYPuX06p7DuzpclyEQPY/edit?gid=1492182534" target="_blank">📊 Balanço Open End 2024</a></div>
+    <div class="card"><a href="https://docs.google.com/spreadsheets/d/1E4gJGXu4O6RDsx2m_Q-tN54FYPuX06p7DuzpclyEQPY/edit?gid=1186186860" target="_blank">📊 Balanço Open End 2025</a></div>
+    <div class="card"><a href="https://docs.google.com/spreadsheets/d/1E4gJGXu4O6RDsx2m_Q-tN54FYPuX06p7DuzpclyEQPY/edit?gid=235250550" target="_blank">📊 Balanço Open End 2026</a></div>
+
+    <div class="card"><a href="https://docs.google.com/spreadsheets/d/1E4gJGXu4O6RDsx2m_Q-tN54FYPuX06p7DuzpclyEQPY/edit?gid=540332591" target="_blank">📈 % por Título Open End 2024</a></div>
+    <div class="card"><a href="https://docs.google.com/spreadsheets/d/1E4gJGXu4O6RDsx2m_Q-tN54FYPuX06p7DuzpclyEQPY/edit?gid=1370985840" target="_blank">📈 % por Título Open End 2025</a></div>
+    <div class="card"><a href="https://docs.google.com/spreadsheets/d/1E4gJGXu4O6RDsx2m_Q-tN54FYPuX06p7DuzpclyEQPY/edit?gid=1097236807" target="_blank">📈 % por Título Open End 2026</a></div>
   </div>
+</div>
+
+<!-- SEÇÃO PREPARAÇÃO -->
+<div class="section preparacao">
+  <h2>🏭 Preparação</h2>
+  <hr style="background-color:#155724;">
+  <div class="container">
+    <!-- Ocorrências -->
+    <div class="card">
+      <a href="https://docs.google.com/spreadsheets/d/1WSk12p87XlDCORdp4iZieE2-dTs3G1JpngsSAbCTb98/edit?gid=1896706324" target="_blank">
+        ⚠️ Ocorrências da Preparação
+      </a>
+    </div>
+
+    <!-- Cardas -->
+    <div class="card">
+      <a href="https://docs.google.com/spreadsheets/d/1-JxQ7ptmwK49dcit_zLymXNui4eQUA-VEiI0mGDfI1c/edit?gid=1826809447" target="_blank">
+        📊 Balanço Carda 2025
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://docs.google.com/spreadsheets/d/1-JxQ7ptmwK49dcit_zLymXNui4eQUA-VEiI0mGDfI1c/edit?gid=1413574311" target="_blank">
+        📊 Balanço Carda 2026
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://docs.google.com/spreadsheets/d/1-JxQ7ptmwK49dcit_zLymXNui4eQUA-VEiI0mGDfI1c/edit?gid=705552691" target="_blank">
+        📈 Gráficos Cardas 2025
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://docs.google.com/spreadsheets/d/1-JxQ7ptmwK49dcit_zLymXNui4eQUA-VEiI0mGDfI1c/edit?gid=647886539" target="_blank">
+        📈 Gráficos Cardas 2026
+      </a>
+    </div>
+
+    <!-- Passadores -->
+    <div class="card">
+      <a href="https://docs.google.com/spreadsheets/d/1ydbOMk3us5eN3DfM_woTnN9XLCTnoaSI-DgdCi_fHP8/edit?gid=643678274" target="_blank">
+        📊 Balanço Passadores 2025
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://docs.google.com/spreadsheets/d/1ydbOMk3us5eN3DfM_woTnN9XLCTnoaSI-DgdCi_fHP8/edit?gid=1731111277" target="_blank">
+        📊 Balanço Passadores 2026
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://docs.google.com/spreadsheets/d/1ydbOMk3us5eN3DfM_woTnN9XLCTnoaSI-DgdCi_fHP8/edit?gid=1999180234" target="_blank">
+        📈 Gráficos Passadores 2025
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://docs.google.com/spreadsheets/d/1ydbOMk3us5eN3DfM_woTnN9XLCTnoaSI-DgdCi_fHP8/edit?gid=733589811" target="_blank">
+        📈 Gráficos Passadores 2026
+      </a>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
